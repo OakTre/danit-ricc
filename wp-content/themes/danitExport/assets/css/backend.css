@@ -1,0 +1,6 @@
+.include-page {
+    padding-top: calc(var(--header-height) + 6rem);
+    background-color: var(--color-grey);
+    color: var(--color-dark-blue);
+    padding-bottom: 6rem;
+}
