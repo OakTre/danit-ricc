@@ -4,3 +4,36 @@
     color: var(--color-dark-blue);
     padding-bottom: 6rem;
 }
+
+.contact-us__form {
+    height: 100%;
+}
+
+.contact-us__form ._success {
+    display: none;
+    height: 100%;
+    text-align: center;
+}
+
+.contact-us__form ._success p {
+    font: var(--font-m);
+}
+
+.contact-us__form ._success.is-active {
+    display: block;
+}
+
+.contact-us__form ._initial.is-hidden {
+    display: none !important;
+}
+
+
+@media screen and (max-width: 767px) {
+    .contact-us__form ._success p {
+        font: var(--font-xs);
+    }
+
+    .contact-us__form {
+        height: auto;
+    }
+}

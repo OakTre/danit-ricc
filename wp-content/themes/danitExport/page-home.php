@@ -190,27 +190,35 @@ $intro_img_src = wp_get_attachment_image_url($intro_img_id, 'full');
         </div>
         <div class="contact-us__grid-container">
             <div class="_block">
-                <form class="contact-us__form form" data-need-validation>
-                    <h3 class="form__heading">Feedback form</h3>
-                    <div class="form__inpts-container">
-                        <label class="form__inpt-container">
-                            <input class="form__input" type="text" name="name" placeholder="Name" data-parsley-required>
-                        </label>
-                        <label class="form__inpt-container">
-                            <input class="form__input" type="text" name="company" placeholder="Company">
-                        </label>
-                        <label class="form__inpt-container">
-                            <input class="form__input" type="number" name="phone" placeholder="Phone" data-parsley-required>
-                        </label>
-                        <label class="form__inpt-container">
-                            <input class="form__input" type="email" name="e-mail" placeholder="E-mail" data-parsley-required>
-                        </label>
-                        <label class="form__inpt-container">
-                            <input class="form__input" type="mail" name="inquiry" placeholder="Inquiry">
-                        </label>
+                <form class="contact-us__form form js-form" data-need-validation action="<?php echo get_template_directory_uri(); ?>/includes/send.php">
+                    <div class="_success">
+                        <h3 class="form__heading">Thanks for the request!</h3>
+                        <p>
+                            We will contact you as soon as possible
+                        </p>
                     </div>
-                    <button class="button mod-white form__btn">Send</button>
-                    <p class="form__argeement">By clicking the send request button you agree to<a href="/">our privacy</a>policy terms</p>
+                    <div class="_initial">
+                        <h3 class="form__heading">Feedback form</h3>
+                        <div class="form__inpts-container">
+                            <label class="form__inpt-container">
+                                <input class="form__input" type="text" name="name" placeholder="Name" data-parsley-required>
+                            </label>
+                            <label class="form__inpt-container">
+                                <input class="form__input" type="text" name="company" placeholder="Company">
+                            </label>
+                            <label class="form__inpt-container">
+                                <input class="form__input" type="number" name="phone" placeholder="Phone" data-parsley-required>
+                            </label>
+                            <label class="form__inpt-container">
+                                <input class="form__input" type="email" name="e-mail" placeholder="E-mail" data-parsley-required>
+                            </label>
+                            <label class="form__inpt-container">
+                                <input class="form__input" type="mail" name="inquiry" placeholder="Inquiry">
+                            </label>
+                        </div>
+                        <button class="button mod-white form__btn">Send</button>
+                        <p class="form__argeement">By clicking the send request button you agree to<a href="/">our privacy</a>policy terms</p>
+                    </div>
                 </form>
                 <a class="contact-us__know-more _mobile" href="/"><span class="contact-us__know-more-text">Know more about IT-&nbsp;solutions in agriculture</span><span class="contact-us__know-more-icon"></span>
                 </a>
